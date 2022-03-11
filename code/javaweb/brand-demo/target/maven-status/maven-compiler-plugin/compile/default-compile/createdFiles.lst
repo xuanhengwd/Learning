@@ -1,0 +1,17 @@
+com\example\mapper\BrandMapper.class
+com\example\web\RegisterServlet.class
+com\example\web\filter\LoginFilter.class
+com\example\web\CheckCodeServlet.class
+com\example\web\DeleteByIdServlet.class
+com\example\util\SqlSessionFactoryUtils.class
+com\example\web\AddServlet.class
+com\example\web\LoginServlet.class
+com\example\web\UpdateServlet.class
+com\example\pojo\Brand.class
+com\example\mapper\UserMapper.class
+com\example\service\BrandService.class
+com\example\service\UserService.class
+com\example\util\CheckCodeUtil.class
+com\example\web\SelectByIdServlet.class
+com\example\pojo\User.class
+com\example\web\SelectAllServlet.class

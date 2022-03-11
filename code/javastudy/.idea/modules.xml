@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/collection_app/collection_app.iml" filepath="$PROJECT_DIR$/collection_app/collection_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_api/common_api.iml" filepath="$PROJECT_DIR$/common_api/common_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day11/day11.iml" filepath="$PROJECT_DIR$/day11/day11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file_app/file_app.iml" filepath="$PROJECT_DIR$/file_app/file_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first_practise/first_practise.iml" filepath="$PROJECT_DIR$/first_practise/first_practise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io_app2/io_app2.iml" filepath="$PROJECT_DIR$/io_app2/io_app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map_app/map_app.iml" filepath="$PROJECT_DIR$/map_app/map_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie_buy/movie_buy.iml" filepath="$PROJECT_DIR$/movie_buy/movie_buy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/net-app/net-app.iml" filepath="$PROJECT_DIR$/net-app/net-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second_atm/second_atm.iml" filepath="$PROJECT_DIR$/second_atm/second_atm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stream-excepation-log-ap/stream-excepation-log-ap.iml" filepath="$PROJECT_DIR$/stream-excepation-log-ap/stream-excepation-log-ap.iml" />
+    </modules>
+  </component>
+</project>

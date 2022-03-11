@@ -1,0 +1,59 @@
+#include<iostream>
+#include <exception>
+using namespace std;
+class yiszero :public exception
+{
+
+public:
+	const char* what () const throw()
+	{
+		return "Divisor cannot be zero";
+	}
+
+};
+class notnum:public exception
+{
+public:
+	const char* what() const throw()
+	{
+		return "not a number";
+	}
+};
+
+int main()
+{
+	double x, y,z;
+	char s;
+	cout << "输入+,-,*,/" << endl;
+	cin >> s;
+	cout << "输入要相加的两个数：" << endl;
+
+	cin >> x >> y;
+	
+		try
+		{
+			if (cin.fail())
+				throw notnum();
+			if (s == '+')
+				z = x+y;
+			if (s == '-')
+				z = x-y;
+			if (s == '*')
+				z = x * y;
+			if (s == '/')
+			{
+				if(y==0)
+					throw  yiszero();
+				z = x / y;
+			}
+			cout << z;
+		}
+		catch (yiszero e)
+		{
+			cout << e.what();
+		}
+		catch(notnum e)
+		{
+			cout << e.what();
+		}
+}

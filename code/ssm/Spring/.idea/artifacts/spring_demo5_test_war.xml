@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-demo5-test:war">
+    <output-path>$PROJECT_DIR$/spring-demo5-test/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-demo5-test</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-demo5-test-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="spring-demo5-test:war exploded" />
+    </root>
+  </artifact>
+</component>
