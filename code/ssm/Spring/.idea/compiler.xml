@@ -11,6 +11,7 @@
         <module name="spring-demo4-jdbc" />
         <module name="spring-demo5-test" />
         <module name="spring-demo7-exception" />
+        <module name="spring-demo8-aop" />
         <module name="spring-demo3-mvc" />
         <module name="spring-demo6-interceptor" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="spring-demo5-test" target="1.8" />
       <module name="spring-demo6-interceptor" target="1.8" />
       <module name="spring-demo7-exception" target="1.8" />
+      <module name="spring-demo8-aop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
