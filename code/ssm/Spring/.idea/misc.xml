@@ -5,8 +5,10 @@
     <file type="web" url="file://$PROJECT_DIR$/spring-demo2" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo3-mvc" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo4-jdbc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-demo5-exception" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo5-test" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo6-interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-demo7-exception" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -17,6 +19,7 @@
         <option value="$PROJECT_DIR$/spring-demo4-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/spring-demo5-test/pom.xml" />
         <option value="$PROJECT_DIR$/spring-demo6-interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-demo7-exception/pom.xml" />
       </list>
     </option>
   </component>

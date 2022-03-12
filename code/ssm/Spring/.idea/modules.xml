@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-demo4-jdbc/spring-demo4-jdbc.iml" filepath="$PROJECT_DIR$/spring-demo4-jdbc/spring-demo4-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo5-test/spring-demo5-test.iml" filepath="$PROJECT_DIR$/spring-demo5-test/spring-demo5-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo6-interceptor/spring-demo6-interceptor.iml" filepath="$PROJECT_DIR$/spring-demo6-interceptor/spring-demo6-interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-demo7-exception/spring-demo7-exception.iml" filepath="$PROJECT_DIR$/spring-demo7-exception/spring-demo7-exception.iml" />
     </modules>
   </component>
 </project>
