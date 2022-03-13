@@ -2,6 +2,7 @@ package com.example.web.servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.example.pojo.Brand;
+import com.example.pojo.PageBean;
 import com.example.service.BrandService;
 import com.example.service.impl.BrandServiceImpl;
 
@@ -108,6 +109,59 @@ public class BrandServlet extends BaseServlet{
         brandService.updateById(brand);
         //响应
         response.getWriter().write("success");
+
+    }
+
+    /**
+     * 分页查询
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void selectByPage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+
+        String _currentPage = request.getParameter("currentPage");
+        String _pageSize = request.getParameter("pageSize");
+        int currentPage = Integer.parseInt(_currentPage);
+        int pageSize = Integer.parseInt(_pageSize);
+
+        PageBean<Brand> pageBean = brandService.selectByPage(currentPage, pageSize);
+
+        String s = JSON.toJSONString(pageBean);
+
+        response.setContentType("text/json;charset=utf-8");
+        response.getWriter().write(s);
+
+    }
+
+    /**
+     * 分页条件查询
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void selectByPageAndCondition(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+
+        String _currentPage = request.getParameter("currentPage");
+        String _pageSize = request.getParameter("pageSize");
+        int currentPage = Integer.parseInt(_currentPage);
+        int pageSize = Integer.parseInt(_pageSize);
+
+        //获取条件查询对象
+        BufferedReader reader = request.getReader();
+        String params = reader.readLine();//json字符串
+        //转换成Brand对象
+        Brand brand = JSON.parseObject(params, Brand.class);
+        System.out.println(brand);
+
+        PageBean<Brand> pageBean = brandService.selectByPageAndCondition(currentPage,pageSize,brand);
+
+        String s = JSON.toJSONString(pageBean);
+
+        response.setContentType("text/json;charset=utf-8");
+        response.getWriter().write(s);
 
     }
 }

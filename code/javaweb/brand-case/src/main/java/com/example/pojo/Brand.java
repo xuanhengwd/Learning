@@ -64,6 +64,14 @@ public class Brand {
         return status;
     }
 
+    //逻辑视图
+    public String getStatusStr(){
+        if (status == null){
+            return "未知";
+        }
+        return status == 0 ? "禁用":"启用";
+    }
+
     public void setStatus(Integer status) {
         this.status = status;
     }

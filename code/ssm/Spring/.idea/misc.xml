@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring-demo1" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-demo10-mybatis_quick" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo2" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo3-mvc" />
     <file type="web" url="file://$PROJECT_DIR$/spring-demo4-jdbc" />
@@ -26,6 +27,7 @@
         <option value="$PROJECT_DIR$/spring-demo8-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-demo9-tx/pom.xml" />
         <option value="$PROJECT_DIR$/spring-demo9-tx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-demo10-mybatis_quick/pom.xml" />
       </list>
     </option>
   </component>

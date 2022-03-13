@@ -13,6 +13,7 @@
         <module name="spring-demo4-jdbc" />
         <module name="spring-demo5-test" />
         <module name="spring-demo7-exception" />
+        <module name="spring-demo10-mybatis_quick" />
         <module name="spring-demo8-aop" />
         <module name="spring-demo3-mvc" />
         <module name="spring-demo6-interceptor" />
@@ -20,6 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-demo1" target="1.8" />
+      <module name="spring-demo10-mybatis_quick" target="1.8" />
       <module name="spring-demo2" target="17" />
       <module name="spring-demo3-mvc" target="1.8" />
       <module name="spring-demo4-jdbc" target="1.8" />

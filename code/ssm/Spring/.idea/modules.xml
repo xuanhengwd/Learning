@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-demo1/spring-demo1.iml" filepath="$PROJECT_DIR$/spring-demo1/spring-demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-demo10-mybatis_quick/spring-demo10-mybatis_quick.iml" filepath="$PROJECT_DIR$/spring-demo10-mybatis_quick/spring-demo10-mybatis_quick.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo2/spring-demo2.iml" filepath="$PROJECT_DIR$/spring-demo2/spring-demo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo3-mvc/spring-demo3-mvc.iml" filepath="$PROJECT_DIR$/spring-demo3-mvc/spring-demo3-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo4-jdbc/spring-demo4-jdbc.iml" filepath="$PROJECT_DIR$/spring-demo4-jdbc/spring-demo4-jdbc.iml" />

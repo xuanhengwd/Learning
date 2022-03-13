@@ -123,7 +123,7 @@
                     label="排序">
             </el-table-column>
             <el-table-column
-                    prop="status"
+                    prop="statusStr"
                     align="center"
                     label="当前状态">
             </el-table-column>
@@ -190,7 +190,7 @@
             :page-sizes="[5, 10, 15, 20]"
             :page-size="100"
             layout="total, sizes, prev, pager, next, jumper"
-            :total="400">
+            :total="totalCount">
     </el-pagination>
 
 </div>
@@ -208,8 +208,10 @@
             return{
 
                 //当前页
-                currentPage: 4,
-
+                currentPage: 1,
+                //每页显示条数
+                pageSize:5,
+                totalCount:100,
 
                 dialogVisible: false,//对话框
                 dialogVisible1: false,//对话框
@@ -278,7 +280,8 @@
 
             //查询
             onSubmit() {
-                console.log(this.brand);
+                //console.log(this.brand);
+                this.selectAll();
 
             },
 
@@ -290,9 +293,9 @@
                 }
                 return '';
             },
-            //查询所有
+            //查询分页数据
             selectAll(){
-                var _this=this;
+/*                var _this=this;
                 //页面加载之后
                 axios({
                     method:"get",
@@ -300,14 +303,40 @@
 
                 }).then(function (resp){
                     _this.tableData=resp.data;
+                })*/
+/*                var _this=this;
+                axios({
+                    method:"post",
+                    url:"http://localhost:8080/brand-case/brand/selectByPageAndCondition?currentPage="+this.currentPage+"&pageSize="+this.pageSize,
+                    data:this.brand
+                }).then(function (resp){
+                    _this.tableData = resp.data.rows;
+                    _this.totalCount=resp.data.totalCount;
+
+                })*/
+
+                var _this=this;
+                axios({
+                    method:"post",
+                    url:"http://localhost:8080/brand-case/brand/selectByPageAndCondition?currentPage="+this.currentPage+"&pageSize="+this.pageSize,
+                    data:this.brand
+                }).then(resp=>{
+                    this.tableData = resp.data.rows;
+                    this.totalCount=resp.data.totalCount;
                 })
+
+
             },
             //分页
             handleSizeChange(val) {
-                console.log(`每页 ${val} 条`);
+                //console.log(`每页 ${val} 条`);
+                this.pageSize=val;
+                this.selectAll();
             },
             handleCurrentChange(val) {
-                console.log(`当前页: ${val}`);
+                //console.log(`当前页: ${val}`);
+                this.currentPage=val;
+                this.selectAll();
             },
 
             //添加数据
