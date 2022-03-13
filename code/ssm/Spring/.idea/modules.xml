@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-demo6-interceptor/spring-demo6-interceptor.iml" filepath="$PROJECT_DIR$/spring-demo6-interceptor/spring-demo6-interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo7-exception/spring-demo7-exception.iml" filepath="$PROJECT_DIR$/spring-demo7-exception/spring-demo7-exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo8-aop/spring-demo8-aop.iml" filepath="$PROJECT_DIR$/spring-demo8-aop/spring-demo8-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-demo9-tx/spring-demo9-tx.iml" filepath="$PROJECT_DIR$/spring-demo9-tx/spring-demo9-tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-demo9-tx_anno/spring-demo9-tx_anno.iml" filepath="$PROJECT_DIR$/spring-demo9-tx_anno/spring-demo9-tx_anno.iml" />
     </modules>
   </component>
 </project>
