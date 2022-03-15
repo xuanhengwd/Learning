@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace:名称空间 必须对应接口的全限定名
+-->
+
+<mapper namespace="com.example.mapper.UserMapper">
+
+
+    <resultMap id="userMap" type="user">
+        <id column="uid" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="password" property="password"></result>
+        <result column="birthday" property="birthday"></result>
+
+
+        <!--集合-->
+        <collection property="orderList" ofType="order">
+            <id column="oid" property="id"></id>
+            <result column="ordertime" property="ordertime"></result>
+            <result column="total" property="total"></result>
+        </collection>
+
+    </resultMap>
+
+
+    <select id="findAll" resultMap="userMap">
+        select *,o.id oid from user u ,orders o where u.id=o.uid
+    </select>
+
+    <resultMap id="userRoleMap" type="user">
+
+        <id column="user_id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="password" property="password"></result>
+        <result column="birthday" property="birthday"></result>
+
+        <collection property="roleList" ofType="role">
+            <id column="role_id" property="id"></id>
+            <result column="rolename" property="roleName"></result>
+        </collection>
+
+    </resultMap>
+
+    <select id="findUserAndRoleAll" resultMap="userRoleMap">
+        select * from user u,user_role ur,role r where u.id = ur.user_id and r.id=ur.role_id
+    </select>
+</mapper>
