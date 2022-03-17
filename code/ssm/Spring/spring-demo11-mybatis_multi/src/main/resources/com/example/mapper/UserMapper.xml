@@ -15,7 +15,9 @@
         <result column="birthday" property="birthday"></result>
 
 
-        <!--集合-->
+        <!--集合
+        用ofType
+        -->
         <collection property="orderList" ofType="order">
             <id column="oid" property="id"></id>
             <result column="ordertime" property="ordertime"></result>
