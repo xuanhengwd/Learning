@@ -59,7 +59,7 @@ public class ActivitiDemo {
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         //2、获取RunTimeService
         RuntimeService runtimeService = processEngine.getRuntimeService();
-        //3、根据流程定义的id启动流程
+        //3、根据流程实例的id启动流程
         ProcessInstance instance = runtimeService.startProcessInstanceByKey("myEvention");
         //4、输出内容
         System.out.println("流程定义id："+instance.getProcessDefinitionId());
@@ -198,9 +198,8 @@ public class ActivitiDemo {
         RepositoryService repositoryService = processEngine.getRepositoryService();
 
         //通过部署id删除流程部署信息
-        String deploymentId="27501";
+        String deploymentId="52501";
         //repositoryService.deleteDeployment(deploymentId);
-
         repositoryService.deleteDeployment(deploymentId,true);
 
     }

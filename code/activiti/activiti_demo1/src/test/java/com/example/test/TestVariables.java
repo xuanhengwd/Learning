@@ -46,8 +46,6 @@ public class TestVariables {
         variables.put("assignee1","王经理");
         variables.put("assignee2","杨总");
         variables.put("assignee3","张财务");
-
-
         runtimeService.startProcessInstanceByKey(key,variables);
 
 

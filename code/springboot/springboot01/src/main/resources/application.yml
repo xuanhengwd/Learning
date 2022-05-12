@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+country: China
+
+
+user:
+  name: xuanheng
+  age: 12
