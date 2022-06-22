@@ -40,7 +40,11 @@ public class ActivitiDemo {
         System.out.println("流程部署id"+deploy.getId());
         System.out.println("流程部署名字"+deploy.getName());
 
+
+
     }
+
+
 
 
     /**
@@ -199,8 +203,17 @@ public class ActivitiDemo {
 
         //通过部署id删除流程部署信息
         String deploymentId="52501";
+        String[] ids = {
+                "67501","70001",
+                "70002","72501",
+                "75001","77501",
+                "82501"
+        };
+        for (String id : ids) {
+            repositoryService.deleteDeployment(id,true);
+        }
         //repositoryService.deleteDeployment(deploymentId);
-        repositoryService.deleteDeployment(deploymentId,true);
+        //repositoryService.deleteDeployment(deploymentId,true);
 
     }
 
