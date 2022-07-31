@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-demo8-aop/spring-demo8-aop.iml" filepath="$PROJECT_DIR$/spring-demo8-aop/spring-demo8-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo9-tx/spring-demo9-tx.iml" filepath="$PROJECT_DIR$/spring-demo9-tx/spring-demo9-tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo9-tx_anno/spring-demo9-tx_anno.iml" filepath="$PROJECT_DIR$/spring-demo9-tx_anno/spring-demo9-tx_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-newdemo1-annotation/spring-newdemo1-annotation.iml" filepath="$PROJECT_DIR$/spring-newdemo1-annotation/spring-newdemo1-annotation.iml" />
     </modules>
   </component>
 </project>
